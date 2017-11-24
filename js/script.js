@@ -9,7 +9,7 @@ $(document).ready(function(){
     var txt = [];
     
     // add a first item to the array
-    txt[1] = "My notes for Nov. 12." ;   
+    txt[1] = "My notes for Nov. 24." ;   
     
     //when the user clicks, the modal is filled with the correct content
    
