@@ -20,34 +20,36 @@
   </head>
   <body>
       <div class="container">
-          <div class="notes">
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#note" id="nov12">Note - 11/12/17</button>
-          </div>
           
-          <div class="notes">
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#note" id="dec5">Note - 12/05/17</button>
-          </div>
+        <!-- This is where any note buttons will appear -->
+        <div id="yournotes">
+        
+            <div class="notes" id="1"><button type="button" class="btn btn-primary" id="note1" data-toggle="modal" data-target="#note">Note - 11/24 3:43 PM</button></div>
           
-          <div class="notes">
-            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#note" id="new">+ Add Note</button>
-          </div>
+        </div>
           
-          <div id="note" class="modal fade" role="dialog">
-              <div class="modal-dialog">
+        <!-- Add new note -->  
+        <div id="addnote">
+          <button type="button" class="btn btn-info" data-toggle="modal" data-target="#note" id="new">+ Add Note</button>
+        </div>
+
+        <!-- Modal -->  
+        <div id="note" class="modal fade" role="dialog">
+            <div class="modal-dialog">
                 <!-- Modal content-->
                 <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" id="x">&times;</button>
-                    <h4 class="modal-title">Notes</h4>
-                  </div>
-                  <div class="modal-body">
-                    <div class="form-group">
-                        <textarea class="form-control" placeholder="Add Note" rows="5" id="comment"></textarea>
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" id="x">&times;</button>
+                        <h4 class="modal-title">Notes</h4>
                     </div>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal" id="btn">Close</button>
-                  </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <textarea class="form-control" placeholder="Add Note" rows="5" id="comment"></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" id="btn">Close</button>
+                    </div>
                 </div>
             </div>
         </div>
